@@ -59,4 +59,8 @@ body:
       description: "Do you have a suggestion on how to fix this?"
       placeholder: "[Insert recommendations here]"
   - type: textarea
-    id:
+    id: verification
+    attributes:
+      label: Verification Status
+      description: "Details on how the vulnerability was verified. (To be filled in by the reporting user or security team)."
+      placeholder: "[Insert verification status here]"
