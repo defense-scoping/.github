@@ -1,0 +1,62 @@
+name: 'Vulnerability Report'
+description: 'Report a security vulnerability or weakness.'
+title: 'Security Report: [Short Description of Vulnerability]'
+labels: ['Issue', 'needs-review']
+body:
+  - type: markdown
+    attributes:
+      value: "Please fill out this form with as much detail as possible to help us resolve the issue quickly."
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: "How severe is this vulnerability?"
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+  - type: dropdown
+    id: status
+    attributes:
+      label: Status
+      description: "What is the current status of this report?"
+      options:
+        - Reported
+        - Verified
+    validations:
+      required: true
+  - type: input
+    id: location
+    attributes:
+      label: Location
+      description: "Where was the vulnerability found? (e.g., file path, URL, component)"
+      placeholder: "[Insert location details here]"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: "Provide a detailed description of the vulnerability."
+      placeholder: "[Insert description here]"
+    validations:
+      required: true
+  - type: textarea
+    id: impact
+    attributes:
+      label: Impact
+      description: "What is the potential impact if this is exploited?"
+      placeholder: "[Insert impact details here]"
+    validations:
+      required: true
+  - type: textarea
+    id: recommendation
+    attributes:
+      label: Recommendation
+      description: "Do you have a suggestion on how to fix this?"
+      placeholder: "[Insert recommendations here]"
+  - type: textarea
+    id:
